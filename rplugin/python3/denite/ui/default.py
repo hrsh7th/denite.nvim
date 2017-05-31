@@ -187,6 +187,7 @@ class Default(object):
         self._bufnr = self._vim.current.buffer.number
         self._winid = self._vim.call('win_getid')
 
+        self._bufvars['denite_context_buffer_name'] = self._context['buffer_name']
         self._bufvars['denite_statusline_mode'] = ''
         self._bufvars['denite_statusline_sources'] = ''
         self._bufvars['denite_statusline_path'] = ''
