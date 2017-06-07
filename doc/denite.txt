@@ -591,6 +591,10 @@ are on the neovim-prompt's builtin actions/mappings.
 		Yank a text into a default register (|v:register|).
 		Note this is a neovim-prompt's builtin action.
 
+				*denite-map-wincmd*
+<denite:wincmd:{direction}>
+		Suspend and execute 'wincmd %direction%'
+
 						*denite_default_key_mappings*
 Following keymappings are the default keymappings.
 
@@ -679,6 +683,10 @@ q		<denite:quit>
 *		<denite:toggle_select_all>
 M		<denite:print_messages>
 P		<denite:change_path>
+<C-w>h		<denite:wincmd:h>
+<C-w>j		<denite:wincmd:j>
+<C-w>k		<denite:wincmd:k>
+<C-w>l		<denite:wincmd:l>
 
 ------------------------------------------------------------------------------
 FUNCTIONS						*denite-functions*
